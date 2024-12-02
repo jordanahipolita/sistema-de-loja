@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estoque.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Cadastros</a></li>
+                <li><a href="#">Suprimentos</a></li>
+                <li><a href="#">Vendas</a></li>
+                <li><a href="#">Finanças</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contabilidade</a></li>
+            </ul>
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="content-header">
+            <h1>Estoque</h1>
+            <div class="dropdown">
+                <button class="dropdown-button">Todos os depósitos <i class="fas fa-chevron-down"></i></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Depósito 1</a></li>
+                    <li><a href="#">Depósito 2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Área de Pesquisa -->
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquise por código, descrição ou GTIN">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Resultado -->
+        <div class="empty-result">
+            <i class="fas fa-file-alt"></i>
+            <p>Selecione um produto</p>
+            <span>Para realizar a consulta de estoque você deve informar um produto.</span>
+        </div>
+
+        <!-- Ações -->
+        <aside class="actions">
+            <h2>Opções</h2>
+            <ul>
+                <li><a href="#">Gerenciar produtos</a></li>
+                <li><a href="#">Transferência entre depósitos</a></li>
+                <li><a href="#">Mostrar totalizador estoque</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixa e Financeiro</title>
+  <link rel="stylesheet" href="caixa.css">
+</head>
+<body>
+  <header>
+    <h1>Controle Financeiro da Loja</h1>
+  </header>
+
+  <main>
+    <section class="summary">
+      <h2>Resumo Financeiro</h2>
+      <div class="balance">
+        <p><strong>Receitas:</strong> R$ <span id="totalReceitas">0.00</span></p>
+        <p><strong>Despesas:</strong> R$ <span id="totalDespesas">0.00</span></p>
+        <p><strong>Saldo:</strong> R$ <span id="saldo">0.00</span></p>
+      </div>
+    </section>
+
+    <section class="transaction-form">
+      <h2>Registrar Transação</h2>
+      <form id="transacaoForm">
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" required>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" required>
+          <option value="entrada">Entrada</option>
+          <option value="saida">Saída</option>
+        </select>
+
+        <label for="valor">Valor (R$):</label>
+        <input type="number" id="valor" step="0.01" required>
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="transaction-history">
+      <h2>Histórico de Transações</h2>
+      <table id="historicoTransacoes">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Tipo</th>
+            <th>Valor</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Transações aparecerão aqui -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sua Loja - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="caixa.js"></script>
+</body>
+</html>

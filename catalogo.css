@@ -1,0 +1,87 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Contêiner do catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para cada produto */
+.produto {
+    background-color: white;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.produto-imagem {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Informações do produto */
+.produto-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.produto-nome {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.produto-descricao {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.produto-preco {
+    font-size: 16px;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+.btn-comprar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-comprar:hover {
+    background-color: #45a049;
+}

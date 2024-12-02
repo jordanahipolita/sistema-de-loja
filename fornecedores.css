@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.fornecedores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fornecedor {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fornecedor-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.fornecedor-info {
+    text-align: left;
+}
+
+.fornecedor-nome {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.fornecedor-categoria,
+.fornecedor-contato {
+    font-size: 14px;
+    color: #555;
+}
+
+.fornecedor-categoria {
+    font-weight: bold;
+}
+
+.fornecedor-contato {
+    margin-top: 5px;
+    color: #333;
+}

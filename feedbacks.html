@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback dos Clientes</title>
+  <link rel="stylesheet" href="feedbacks.css">
+  <script src="feedbacks.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Feedback dos Clientes</h1>
+    <p>Compartilhe sua opinião e veja o que outros clientes estão dizendo.</p>
+  </header>
+
+  <main>
+    <!-- Formulário de Feedback -->
+    <section class="feedback-form">
+      <h2>Deixe seu Feedback</h2>
+      <form id="feedbackForm">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Lista de Feedbacks -->
+    <section class="feedback-list">
+      <h2>Feedbacks dos Clientes</h2>
+      <ul id="listaFeedbacks">
+        <!-- Feedbacks serão adicionados aqui dinamicamente -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sua Empresa - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
